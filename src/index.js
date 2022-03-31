@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import "./index.css";
 export default function React0tp({ title, errorText, fieldsNumber, handleSend, height, hasError = false, borderColor, borderWidth, borderRadius, width }) {
     const [otp, setOtp] = useState(new Array(fieldsNumber).fill(""));
 

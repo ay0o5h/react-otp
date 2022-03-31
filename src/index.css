@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.otp {
+  border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 2%;
+  margin: 2%;
+  width: 300px;
+  position: relative;
+}
+
+.otp h3 {
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 5%;
+  padding: 0;
+
+}
+
+.otp input {
+  width: 50px;
+  height: 50px;
+  border: 2px solid;
+  padding: 5%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.otp button {
+  display: block;
+  outline: 0;
+  border: 0;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 3% 5%;
+  margin: 5% 0 3% 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.otp .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.otp .overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.otp .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.otp .popup h2 {
+  margin-top: 0;
+  color: #EE1B24;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.otp .popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.otp .popup .close:hover {
+  color: #06D85F;
+}
+
+.otp .popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .otp .popup {
+    width: 70%;
+  }
+}
+
+.otp hr {
+  height: 1px;
+  color: #eee;
+  background: #eee;
+  font-size: 0;
+  margin-bottom: 5%;
+  border: 0;
+}
