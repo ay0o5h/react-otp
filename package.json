@@ -3,6 +3,10 @@
   "version": "1.0.13",
   "description": "one-time password input component for the web built with React.",
   "main": "./build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ay0o5h/react-otp"
+  },
   "scripts": {
   
     "build": "webpack"
